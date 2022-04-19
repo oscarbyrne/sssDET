@@ -45,6 +45,6 @@ return to reality, and make a mental note to cut pizza into 8 pieces next time b
 
 Why do you think pizza is usually round?
 
-## Anything Web Can Improve?
+## Anything We Can Improve?
 
 Let us know if you think we can improve anything in this exercise!
