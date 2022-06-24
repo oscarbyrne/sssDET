@@ -29,7 +29,7 @@ Write out test cases that cover the following scenario:
 3) A user can reset their password via our forgot password feature, in which they can specify their userId and an email is sent with instructions on how to reset their password
 4) At a high level, write notes on how could you automate some of these test cases? Which ones would you automate and why?
 
-Submit a text file containing the test cases and notes on how to automate, if applicable.
+Submit a text file enumerating the test case descriptions and any notes from part 4 regarding automation.
 
 ## Exercise 3: Personal Story
 
