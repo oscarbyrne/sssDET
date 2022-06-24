@@ -5,7 +5,7 @@
 1. Create a new Gmail user or use an existing user for this exercise
 2. Install/configure a test automation tool such as Selenium, Cypress or equivalent
 
-## Exercise 1: New Email
+## Exercise 1: New Email Test Automation
 
 Write a script that performs the following automated test:
 
@@ -21,16 +21,15 @@ you run it a million times, although you should be able to now that your test is
 
 Submit a screen recording (video) of the test operating, along with your code.
 
-## Exercise 2: Labels
+## Exercise 2: Test Cases Creation and Automation
 
-What is the difference between a label and a folder in Gmail?
+Write out test cases that cover the following scenario:
+1) Our web application login is similar to most websites in that our users are prompted for a userId and Password or prompted to use their SSO credentials (as configured with our customers) to log in
+2) When creating a password, users are required to enter a moderate level of password complexity
+3) A user can reset their password via our forgot password feature, in which they can specify their userId and an email is sent with instructions on how to reset their password
+4) At a high level, write notes on how could you automate some of these test cases? Which ones would you automate and why?
 
-Can you find an example somewhere in Gmail where the UI for labels starts to break down when the nesting is more than 
-4 or 5 levels deep? What have the Gmail developers done to accommodate that situation?
-
-* Create a nested label 'test1/test2/test3'.
-* Describe the first list entry in the 'Label as:' dialog for an email that already has the label test1/test2/test3.
-* Describe the resulting behaviour when you select 'test1/test2' in the 'Label as:' dialog for an email that already has the label test1/test2/test3?
+Submit a text file containing the test cases and notes on how to automate, if applicable.
 
 ## Exercise 3: Personal Story
 
