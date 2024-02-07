@@ -51,8 +51,11 @@ When you have this working, commit (and push) your files you created and instruc
 At the end of this, you should have committed (and pushed) the following to the git repo we shared with you:
 
 testcase1.txt
+
 bugreport1.txt
+
 issues1.txt
+
 testapp\ -- directory for your test automation scripts including screen recording
 
 
