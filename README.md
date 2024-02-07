@@ -1,49 +1,61 @@
-# QA Automation Exercise
 
-## Preparation:
+# BL SDET Tech Test
 
-1. Create a new Gmail user or use an existing user for this exercise
-2. Install/configure a test automation tool such as Selenium, Cypress or equivalent
+## Background
 
-## Exercise 1: New Email Test Automation
+There are two parts to this exercise. First we want to test your manual QA abilities. Second, we want to test your automation skills. Please commit (and push) your responses to this test into the git repository we have shared with yu. 
 
-Write a script that performs the following automated test:
 
-1) Log in to Gmail
-2) Compose and send a new email to the same user logged in
-3) When the new email arrives, move it to a newly created folder called "test1". Be sure to account for a delay in case Gmail is slow for some reason.
-4) Delete the folder "test1"
-5) Log out of Gmail
+## Part 1 - QA Scenarios
 
-Note: The test can be initiated manually from the command line or testing IDE but should execute without human 
-interaction. If the test ran a million times would you run out of space in your gmail account? (We do not recommend 
-you run it a million times, although you should be able to now that your test is automated!)
 
-Submit a screen recording (video) of the test operating, along with your code.
+1. Write a test case for successfully sending an email in Gmail.
 
-## Exercise 2: Test Cases Creation and Automation
+Document your test case in a file called testcase1.txt. Commit (and push)  this file to this git repo.
 
-Write out test cases that cover the following scenario:
-1) Our web application login is similar to most websites in that our users are prompted for a userId and Password or prompted to use their SSO credentials (as configured with our customers) to log in
-2) When creating a password, users are required to enter a moderate level of password complexity
-3) A user can reset their password via our forgot password feature, in which they can specify their userId and an email is sent with instructions on how to reset their password
-4) At a high level, write notes on how could you automate some of these test cases? Which ones would you automate and why?
 
-Submit a text file enumerating the test case descriptions and any notes from part 4 regarding automation.
+2. Consider the following screenshot. Write a bug report for the exception that occurs on the Login page during the login process. 
 
-## Exercise 3: Personal Story
+Screenshot: https://www.evernote.com/shard/s365/sh/d01105e9-699d-94d2-149a-7c5deff79348/RMQlTCliUgVP6pjFwgQL5Ug5tkRKZFwiYVDDeP4W_hWdRL8gc1QrjR-QuQ
 
-Explain a real-life situation that you recently found yourself in where you stopped yourself and questioned 
-'the quality of that'. 
+Write your bug report in a text document called bugreport1.txt. Include all important information. Commit (and push) this file to this git repo.
 
-For example, you make a pizza and quickly cut it into 6 pieces. You find yourself asking if you cut it fairly by 
-starting to calculate the volume of each piece for each millimetre off with your cuts. Then you shake your head, 
-return to reality, and make a mental note to cut pizza into 8 pieces next time because you can do it more accurately :)
 
-## Bonus question
+3. Consider the following video. What potential issues (if any) do you see with this password reset scenario?
 
-Why do you think pizza is usually round?
+Video: https://drive.google.com/file/d/1hhjKcmv0RDUJNLNXST2FPxXBKYVJBG-7/view?pli=1
 
-## Anything We Can Improve?
+The scenario includes steps to specifying a wrong email address, getting the “reset password” email for the correct email address, trying to change password to the one that’s used previously, and successfully setting a new password.
 
-Let us know if you think we can improve anything in this exercise!
+Write the summary of any issues you see in text document called issues1.txt. Commit (and push) this file to this git repo.
+
+
+## Part 2 - Programming Exercise
+
+Using the demonstration application found here: https://github.com/juice-shop/juice-shop, we want you to demonstrate how you would setup a test automation framework to test this site. To get started, follow the instructions at the bottom of this link to get the application running locally. We recommend using the instructions for Docker, but you are free to follow alternate instructions. Once you have it running, we want you to write an automated test using Playwright + Python (or alternative testing framework that is Python based) to perform the following test scenario:
+
+1. Log in
+2. Add a carrot juice to your basket
+3. Verify that the item is in your basket
+4. Remove item from your basked
+5. Verify that item is removed from basket
+6. Log out
+
+Please create a screen recording of your automation test in action and include this in your submission.
+
+When you have this working, commit (and push) your files you created and instructions on how to run your test to a directory called testapp in this git repo.
+
+
+## Check
+
+At the end of this, you should have committed (and pushed) the following to the git repo we shared with you:
+
+testcase1.txt
+bugreport1.txt
+issues1.txt
+testapp\ -- directory for your test automation scripts including screen recording
+
+
+## Tech Interview
+
+In the techincal interview, be prepared to discuss your responses and solution to the programming exercise.
