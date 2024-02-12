@@ -1,0 +1,3 @@
+[submodule "app/strudel"]
+	path = app/strudel
+	url = https://github.com/oscarbyrne/strudel.git
