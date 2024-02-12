@@ -2,7 +2,6 @@
 Toy test framework
 
 ## TODO
-- programmatically create .dockerignore
 - makefile for strudel container allowing to run linter & tests
 - container for e2e tests
 - example e2e test in playwright
