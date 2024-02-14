@@ -16,3 +16,5 @@ RUN playwright install
 COPY ./sut/juice-shop/data/static ./data/static
 COPY ./src/data ./data
 COPY ./src/e2e ./e2e
+
+CMD pytest --tracing on

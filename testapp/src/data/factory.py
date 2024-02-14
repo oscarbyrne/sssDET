@@ -1,6 +1,6 @@
 from pathlib import Path
 
-from models import User
+from .models import User
 
 
 STATIC_DATA = Path(__file__).with_name('static')
