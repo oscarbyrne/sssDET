@@ -1,0 +1,14 @@
+include:
+  - compose.yaml
+services:
+  e2e:
+    build:
+      context: ./
+      dockerfile: ./e2e.Dockerfile
+    depends_on:
+      sut:
+        condition: service_healthy
+    volumes:
+      - type: bind
+        source: ./results
+        target: /app/results
