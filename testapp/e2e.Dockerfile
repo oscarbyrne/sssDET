@@ -4,10 +4,15 @@ RUN apt update
 RUN apt install -y python3-pip
 
 WORKDIR /app
+RUN mkdir -p ./data
 RUN mkdir -p ./e2e
 
+COPY ./src/data/requirements.txt ./data
 COPY ./src/e2e/requirements.txt ./e2e
-RUN pip install -r ./e2e/requirements.txt
+
+RUN pip install -r ./data/requirements.txt -r ./e2e/requirements.txt
 RUN playwright install
 
-COPY ./src/e2e . 
+COPY ./sut/juice-shop/data/static ./data/static
+COPY ./src/data ./data
+COPY ./src/e2e ./e2e
