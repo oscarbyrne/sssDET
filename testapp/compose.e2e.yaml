@@ -11,4 +11,4 @@ services:
     volumes:
       - type: bind
         source: ./results
-        target: /app/test-results
+        target: /app/results
