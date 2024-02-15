@@ -27,6 +27,5 @@ class AccountModal(PageObject):
 
 class WelcomeModal(PageObject):
 
-    @property
-    def close_button(self):
-        self.page.get_by_role('button', name='Close Welcome Banner')
+    def dismiss(self):
+        self.page.get_by_role('button', name='Close Welcome Banner').click()

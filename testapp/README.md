@@ -6,7 +6,7 @@
 ## To do
 - allow to build juice-shop/Docker directly for test harness 
 - reduce permissions on results bind mount
-- ensure timeouts are followed for PO elements
+- figure out why PageObject.properties are returning None
 - logging
 - linting for POs
 - POs generation from yaml files

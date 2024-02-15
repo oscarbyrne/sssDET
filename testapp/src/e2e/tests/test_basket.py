@@ -23,7 +23,7 @@ def test_add_remove_item(page, user_with_email):
     page.goto('http://sut:3000')
 
     # Given I'm logged in
-    common.WelcomeModal(page).close_button.click()
+    common.WelcomeModal(page).dismiss()
     common.Header(page).toggle_account_modal()
     common.AccountModal(page).login_button.click()
     login.Form(page).enter_email(user.email)
