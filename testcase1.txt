@@ -1,0 +1,57 @@
+## ID
+1
+
+
+## Type
+Acceptance
+
+
+## User Story
+<link to Jira ticket or similar>
+
+
+## Suite
+inbox
+
+
+## Title
+Succesfully send an email
+
+
+## Test data
+```
+users:
+  - Sam:
+    email: sam@gmail.com
+    password: test123
+
+  - Buddy:
+    email: buddy@gmail.com
+    password: test123
+```
+
+## Description
+
+### Context
+Sam and Buddy are viewing their inboxes
+
+### Steps
+- Sam clicks the Compose email button
+- Sam adds some text to the body of the email
+- Sam adds Buddy's email address to the To field
+- Sam clicks send
+
+### Expected Results
+- The email appears in Buddy's inbox
+
+
+## Estimate
+3 minutes
+
+
+## Video
+<include a video of a passing test>
+
+
+## Screenshots
+<optionally include screenshots of any important test steps>
