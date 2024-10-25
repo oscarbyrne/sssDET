@@ -6,8 +6,7 @@ class PageObject:
 
 class Header(PageObject):
 
-    @property
-    def basket(self):
+    def view_basket(self):
         pass
 
     def toggle_account_modal(self):
@@ -16,12 +15,10 @@ class Header(PageObject):
 
 class AccountModal(PageObject):
 
-    @property
-    def login_button(self):
-        self.page.get_by_role('menuitem', name='Go to login page')
+    def login(self):
+        self.page.get_by_role('menuitem', name='Go to login page').click()
 
-    @property
-    def logout_button(self):
+    def logout(self):
         pass
 
 
