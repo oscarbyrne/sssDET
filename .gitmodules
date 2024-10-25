@@ -1,3 +1,0 @@
-[submodule "testapp/sut/juice-shop"]
-	path = testapp/sut/juice-shop
-	url = https://github.com/juice-shop/juice-shop.git
